@@ -14,11 +14,11 @@ const UserDisplay = (props) => {
             {
                 props.users.map( (u, i) => {
                     return <div>
-                                <p key={i}> {u.FirstName}</p>
-                                <p key={i}> {u.LastName}</p>
-                                <p key={i}> {u.Email}</p>
-                                <p key={i}> {u.Password}</p>
-                                <p key={i}> {u.ConfirmPassword}</p>
+                                <p key={i}><label>First Name:  {u.FirstName}</label></p>
+                                <p key={i}><label>Last Name:  {u.LastName}</label></p>
+                                <p key={i}><label>Email:  {u.Email}</label></p>
+                                <p key={i}><label>Password:  {u.Password}</label></p>
+                                <p key={i}><label>Confirm Password: {u.ConfirmPassword}</label></p>
                             </div>
                 })
             }

@@ -56,6 +56,15 @@ const Form = (props) => {
                 <input type="password" onChange={ (e) => setConfirmPassword(e.target.value) } value={ ConfirmPassword } />
             </div>
             <input type="submit" value="Create User" />
+
+
+            <h3>Your Form Info</h3>
+            <p>First Name: { FirstName }</p>
+            <p>Last Name: { LastName }</p>
+            <p>Email: { Email }</p>
+            <p>Password: { Password }</p>
+            <p>Confirm Password: { ConfirmPassword }</p>
+
         </form>
 
 
